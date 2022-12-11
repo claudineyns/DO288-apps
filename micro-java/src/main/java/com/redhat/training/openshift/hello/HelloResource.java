@@ -17,6 +17,7 @@ public class HelloResource {
 
     @ConfigProperty(name = "HOSTNAME", defaultValue = "unknown")
     String hostname;
+
     @ConfigProperty(name = "APP_MSG")
     Optional<String> message;
 
