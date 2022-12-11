@@ -18,6 +18,7 @@ public class ServerHostEndPoint {
     }
     catch (Exception e) {
        e.printStackTrace();
+       host = Thread.currentThread().getName();
     }
     String msg = "I am running on server "+host+" Version 1.0 \n";
     return Response.ok(msg).build();
